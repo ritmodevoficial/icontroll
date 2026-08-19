@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "iControll | Sites e sistemas feitos para o seu negócio.",
+    default: "iControll | Sites e sistemas feitos para o seu negócio",
     template: "%s | iControll",
   },
   description:
-    "A iControll desenvolve sites profissionais e sistemas personalizados para ajudar empresas a apresentar seus serviços, organizar processos e crescer no digital.",
+    "A iControll desenvolve sites profissionais e sistemas personalizados para empresas e negócios.",
 };
 
 export default function RootLayout({
@@ -24,7 +26,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.variable}>{children}</body>
+      <body className={inter.variable}>
+        <Header />
+
+        <main>{children}</main>
+
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,0 +1,206 @@
+.footer {
+  margin-top: auto;
+  background: var(--color-background-secondary);
+  border-top: 1px solid var(--color-border);
+}
+
+.container {
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* ========================================
+   MARCA
+   ======================================== */
+
+.brand {
+  max-width: 24rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.logoMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.6rem;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1;
+  box-shadow: 0 4px 12px rgb(37 99 235 / 0.2);
+}
+
+.logoName {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.description {
+  margin-top: 1rem;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ========================================
+   TÍTULOS
+   ======================================== */
+
+.title {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* ========================================
+   NAVEGAÇÃO
+   ======================================== */
+
+.navigationList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigationList a {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navigationList a:hover {
+  color: var(--color-primary);
+}
+
+/* ========================================
+   CONTATO
+   ======================================== */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactLink {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.contactLink:hover {
+  color: var(--color-primary);
+}
+
+.contactLink span:first-child {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1rem;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.email span:first-child {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+/* ========================================
+   PARTE INFERIOR
+   ======================================== */
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+}
+
+.bottom p {
+  margin: 0;
+}
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+    max-width: 32rem;
+  }
+}
+
+/* ========================================
+   CELULAR
+   ======================================== */
+
+@media (max-width: 560px) {
+  .container {
+    padding-top: 3rem;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .brand {
+    grid-column: auto;
+  }
+
+  .bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
