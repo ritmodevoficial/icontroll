@@ -1,69 +1,100 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
+    <main>
+      <section className="container" style={{ paddingBlock: "6rem" }}>
+        <div style={{ maxWidth: "760px" }}>
+          <span
+            className="text-primary"
+            style={{
+              display: "inline-block",
+              marginBottom: "1rem",
+              fontSize: "0.875rem",
+              fontWeight: 700,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+            }}
+          >
+            iControll
+          </span>
+
+          <h1 className="heading-1">
+            Sites e sistemas feitos para o seu negócio.
           </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p
+            className="text-lead"
+            style={{
+              maxWidth: "680px",
+              marginTop: "1.5rem",
+            }}
+          >
+            Desenvolvemos sites profissionais e sistemas personalizados para
+            ajudar empresas a apresentar seus serviços, organizar processos e
+            crescer no digital.
           </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "0.75rem",
+              marginTop: "2rem",
+            }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <button className="button button-primary">
+              Solicitar orçamento
+            </button>
+
+            <button className="button button-secondary">
+              Conhecer nossos sistemas
+            </button>
+          </div>
         </div>
-      </main>
-    </div>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: "1rem",
+            marginTop: "4rem",
+          }}
+        >
+          <article className="card">
+            <h2 className="heading-3">Sites profissionais</h2>
+
+            <p
+              className="text-secondary"
+              style={{ marginTop: "0.75rem" }}
+            >
+              Sites modernos, responsivos e preparados para apresentar sua
+              empresa na internet.
+            </p>
+          </article>
+
+          <article className="card">
+            <h2 className="heading-3">Sistemas personalizados</h2>
+
+            <p
+              className="text-secondary"
+              style={{ marginTop: "0.75rem" }}
+            >
+              Soluções desenvolvidas de acordo com os processos e necessidades
+              do seu negócio.
+            </p>
+          </article>
+
+          <article className="card">
+            <h2 className="heading-3">Automação e integrações</h2>
+
+            <p
+              className="text-secondary"
+              style={{ marginTop: "0.75rem" }}
+            >
+              Conecte ferramentas e simplifique tarefas repetitivas.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
   );
 }
