@@ -24,7 +24,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <Link
-          href="/"
+          href="/inicio"
           className={styles.logo}
           aria-label="iControll - Página inicial"
         >

@@ -1,0 +1,830 @@
+/* ========================================
+   BASE
+======================================== */
+
+.contato-page {
+  background: #ffffff;
+  color: #182033;
+}
+
+.contato-container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.contato-label {
+  display: inline-block;
+
+  color: #635bff;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.contato-hero {
+  padding: 90px 0 85px;
+
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(99, 91, 255, 0.13),
+      transparent 32%
+    ),
+    #f8f9ff;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+.contato-hero-content {
+  max-width: 780px;
+}
+
+.contato-hero h1 {
+  margin: 15px 0 20px;
+
+  font-size: clamp(42px, 5vw, 62px);
+
+  line-height: 1.06;
+
+  letter-spacing: -3px;
+
+  font-weight: 800;
+}
+
+.contato-hero h1 span {
+  color: #635bff;
+}
+
+.contato-hero p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   CONTATO PRINCIPAL
+======================================== */
+
+.contato-section {
+  padding: 100px 0;
+}
+
+.contato-grid {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 70px;
+
+  align-items: start;
+}
+
+
+/* ========================================
+   INFORMAÇÕES
+======================================== */
+
+.contato-info h2 {
+  margin: 14px 0 18px;
+
+  font-size: 42px;
+
+  line-height: 1.1;
+
+  letter-spacing: -1.8px;
+}
+
+.contato-intro {
+  max-width: 480px;
+
+  margin-bottom: 35px;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   CARDS DE CONTATO
+======================================== */
+
+.contact-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  width: 100%;
+
+  padding: 20px;
+
+  margin-bottom: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 15px;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d7d9e2;
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.contact-card-primary {
+  border-color: rgba(99, 91, 255, 0.3);
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #f8f7ff
+    );
+}
+
+.contact-icon {
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 12px;
+
+  background: rgba(99, 91, 255, 0.1);
+
+  color: #635bff;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.contact-card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.contact-card-content span {
+  margin-bottom: 2px;
+
+  color: #635bff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+.contact-card-content strong {
+  color: #182033;
+
+  font-size: 16px;
+}
+
+.contact-card-content p {
+  margin: 2px 0 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.contact-arrow {
+  margin-left: auto;
+
+  color: #635bff;
+
+  font-size: 20px;
+}
+
+
+/* ========================================
+   EXTRA INFO
+======================================== */
+
+.contact-extra {
+  display: flex;
+
+  gap: 16px;
+
+  margin-top: 35px;
+
+  padding-top: 28px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.contact-extra-number {
+  color: #635bff;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+}
+
+.contact-extra h3 {
+  margin-bottom: 6px;
+
+  font-size: 15px;
+}
+
+.contact-extra p {
+  max-width: 400px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   FORMULÁRIO
+======================================== */
+
+.contact-form-wrapper {
+  padding: 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 50px rgba(15, 23, 42, 0.06);
+}
+
+.form-header {
+  padding-bottom: 25px;
+
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.form-header span {
+  color: #635bff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.form-header h2 {
+  margin: 10px 0;
+
+  font-size: 27px;
+
+  letter-spacing: -0.8px;
+}
+
+.form-header p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   CAMPOS
+======================================== */
+
+.contact-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.form-row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.form-group label {
+  color: #182033;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #182033;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #635bff;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 91, 255, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 140px;
+}
+
+
+/* ========================================
+   BOTÃO
+======================================== */
+
+.form-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  width: 100%;
+
+  padding: 15px 20px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #635bff;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.form-button:hover {
+  background: #5148e5;
+
+  transform: translateY(-2px);
+}
+
+.form-button span {
+  font-size: 18px;
+}
+
+.form-note {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   COMO PODEMOS AJUDAR
+======================================== */
+
+.help-section {
+  padding: 100px 0;
+
+  background: #f5f7fb;
+
+  border-top: 1px solid #eef0f4;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+.help-header {
+  max-width: 700px;
+
+  margin-bottom: 50px;
+}
+
+.help-header h2 {
+  margin: 13px 0;
+
+  font-size: 40px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.help-header p {
+  max-width: 580px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   CARDS DE SERVIÇO
+======================================== */
+
+.help-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.help-card {
+  position: relative;
+
+  min-height: 290px;
+
+  padding: 28px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.help-number {
+  position: absolute;
+
+  top: 24px;
+  right: 25px;
+
+  color: #cbd5e1;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+.help-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 25px;
+
+  border-radius: 11px;
+
+  background: rgba(99, 91, 255, 0.1);
+
+  color: #635bff;
+
+  font-size: 20px;
+}
+
+.help-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 17px;
+}
+
+.help-card p {
+  margin-bottom: 20px;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+.help-card a {
+  color: #635bff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+
+/* ========================================
+   CTA
+======================================== */
+
+.contato-cta {
+  padding: 80px 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0b1020,
+      #1e1b4b
+    );
+}
+
+.cta-box {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  background:
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(99, 91, 255, 0.2),
+      transparent 35%
+    );
+}
+
+.cta-box .contato-label {
+  color: #a5a0ff;
+}
+
+.cta-box h2 {
+  margin-top: 12px;
+
+  color: #ffffff;
+
+  font-size: 40px;
+
+  line-height: 1.1;
+
+  letter-spacing: -1.5px;
+}
+
+.cta-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+
+  padding: 15px 24px;
+
+  border-radius: 10px;
+
+  background: #635bff;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #5148e5;
+
+  transform: translateY(-2px);
+}
+
+.cta-button span {
+  font-size: 18px;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 900px) {
+
+  .contato-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-box {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .contato-hero {
+    padding: 70px 0;
+  }
+
+  .contato-hero h1 {
+    font-size: 40px;
+
+    letter-spacing: -2px;
+  }
+
+  .contato-section {
+    padding: 70px 0;
+  }
+
+  .contato-info h2 {
+    font-size: 34px;
+  }
+
+  .contact-form-wrapper {
+    padding: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .help-section {
+    padding: 70px 0;
+  }
+
+  .help-header h2 {
+    font-size: 32px;
+  }
+
+  .help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .help-card {
+    min-height: auto;
+  }
+
+  .contato-cta {
+    padding: 60px 0;
+  }
+
+  .cta-box {
+    padding: 30px;
+  }
+
+  .cta-box h2 {
+    font-size: 32px;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .contato-container {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .contato-hero h1 {
+    font-size: 34px;
+  }
+
+  .contact-card {
+    padding: 16px;
+  }
+
+  .contact-form-wrapper {
+    padding: 20px;
+  }
+
+}

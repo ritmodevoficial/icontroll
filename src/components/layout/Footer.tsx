@@ -1,15 +1,6 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
-const navigationItems = [
-  { label: "Início", href: "/inicio" },
-  { label: "Serviços", href: "/servicos" },
-  { label: "Planos", href: "/planos" },
-  { label: "Sistemas", href: "/sistemas" },
-  { label: "Sobre", href: "/sobre" },
-  { label: "Contato", href: "/contato" },
-];
-
 const whatsappNumber = "5537998202975";
 
 const whatsappMessage =
@@ -24,9 +15,10 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.container}`}>
         <div className={styles.main}>
+          {/* MARCA */}
           <div className={styles.brand}>
             <Link
-              href="/"
+              href="/inicio"
               className={styles.logo}
               aria-label="iControll - Página inicial"
             >
@@ -42,18 +34,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav aria-label="Navegação do rodapé">
-            <h2 className={styles.title}>Navegação</h2>
-
-            <ul className={styles.navigationList}>
-              {navigationItems.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
+          {/* CONTATO */}
           <div className={styles.contact}>
             <h2 className={styles.title}>Contato</h2>
 
@@ -74,6 +55,7 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* RODAPÉ INFERIOR */}
         <div className={styles.bottom}>
           <p>© 2026 iControll. Todos os direitos reservados.</p>
 

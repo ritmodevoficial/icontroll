@@ -1,0 +1,1126 @@
+/* =========================================================
+   BASE
+========================================================= */
+
+.sobre-page {
+  background: #ffffff;
+  color: #182033;
+  overflow: hidden;
+}
+
+.sobre-container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.sobre-label {
+  display: inline-block;
+  color: #635bff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.sobre-hero {
+  position: relative;
+  padding: 100px 0 105px;
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(99, 91, 255, 0.14),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      #f8f9ff 0%,
+      #ffffff 100%
+    );
+}
+
+.sobre-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.sobre-hero-content h1 {
+  margin: 17px 0 23px;
+
+  font-size: clamp(44px, 5vw, 62px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+.sobre-hero-content h1 span {
+  color: #635bff;
+}
+
+.sobre-hero-content > p {
+  max-width: 590px;
+  margin: 0 0 32px;
+
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.sobre-hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.sobre-primary-button,
+.sobre-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 20px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.sobre-primary-button {
+  background: #635bff;
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(99, 91, 255, 0.2);
+}
+
+.sobre-primary-button:hover {
+  background: #5148e5;
+  transform: translateY(-2px);
+}
+
+.sobre-secondary-button {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #475569;
+}
+
+.sobre-secondary-button:hover {
+  border-color: #cfd3dc;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.sobre-visual {
+  position: relative;
+  min-height: 480px;
+}
+
+.visual-glow {
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  top: 70px;
+  right: 20px;
+
+  background: rgba(99, 91, 255, 0.16);
+
+  filter: blur(70px);
+
+  border-radius: 50%;
+}
+
+.visual-card-main {
+  position: absolute;
+
+  top: 55px;
+  right: 35px;
+
+  width: 380px;
+  min-height: 360px;
+
+  padding: 38px;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #111827,
+      #19163f
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 35px 80px rgba(15, 23, 42, 0.2);
+
+  z-index: 2;
+}
+
+.visual-logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.visual-logo span {
+  color: #817aff;
+}
+
+.visual-line {
+  width: 55px;
+  height: 3px;
+
+  margin: 55px 0 25px;
+
+  border-radius: 10px;
+
+  background: #635bff;
+}
+
+.visual-card-main h3 {
+  margin-bottom: 15px;
+
+  font-size: 35px;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.visual-card-main p {
+  max-width: 240px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.visual-floating {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.1);
+
+  z-index: 3;
+}
+
+.visual-floating span {
+  display: grid;
+  place-items: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 10px;
+
+  background: rgba(99, 91, 255, 0.1);
+
+  color: #635bff;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.visual-floating strong,
+.visual-floating small {
+  display: block;
+}
+
+.visual-floating strong {
+  color: #182033;
+  font-size: 12px;
+}
+
+.visual-floating small {
+  margin-top: 3px;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+.visual-floating-top {
+  top: 20px;
+  right: -10px;
+}
+
+.visual-floating-bottom {
+  left: 5px;
+  bottom: 25px;
+}
+
+
+/* =========================================================
+   QUEM SOMOS
+========================================================= */
+
+.about-section {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 90px;
+}
+
+.about-heading h2 {
+  margin-top: 14px;
+
+  font-size: 42px;
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+}
+
+.about-heading h2 span {
+  color: #635bff;
+}
+
+.about-lead {
+  margin: 0 0 45px;
+
+  color: #475569;
+
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.about-highlight {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 20px;
+
+  padding: 28px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+
+  background: #f8f9ff;
+
+  box-shadow:
+    0 10px 30px rgba(15, 23, 42, 0.035);
+}
+
+.highlight-number {
+  color: #635bff;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.about-highlight h3 {
+  margin-bottom: 9px;
+
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.about-highlight p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   OBJETIVO
+========================================================= */
+
+.objective-section {
+  padding: 30px 0 105px;
+}
+
+.objective-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  padding: 48px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0b1020,
+      #211d53
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.16);
+}
+
+.objective-icon {
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  width: 70px;
+  height: 70px;
+
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 18px;
+
+  background: rgba(99,91,255,0.2);
+
+  color: #a5a0ff;
+
+  font-size: 25px;
+}
+
+.objective-content span {
+  color: #a5a0ff;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.15em;
+}
+
+.objective-content h2 {
+  margin: 10px 0 13px;
+
+  font-size: 31px;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.objective-content p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #aeb8ca;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.objective-arrow {
+  margin-left: auto;
+
+  color: #635bff;
+
+  font-size: 42px;
+}
+
+
+/* =========================================================
+   WORKFLOW
+========================================================= */
+
+.workflow-section {
+  padding: 105px 0;
+
+  background: #f5f7fb;
+
+  border-top: 1px solid #eef0f4;
+  border-bottom: 1px solid #eef0f4;
+}
+
+.section-heading-centered {
+  max-width: 700px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.section-heading-centered h2 {
+  margin-top: 13px;
+
+  font-size: 42px;
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+}
+
+.section-heading-centered h2 span {
+  color: #635bff;
+}
+
+.workflow-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.workflow-card {
+  min-height: 245px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 25px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  transition: 0.25s ease;
+}
+
+.workflow-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.workflow-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workflow-number {
+  color: #635bff;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.workflow-arrow {
+  color: #cbd5e1;
+
+  font-size: 20px;
+}
+
+.workflow-bottom h3 {
+  margin-bottom: 10px;
+
+  font-size: 19px;
+}
+
+.workflow-bottom p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   PRINCÍPIOS
+========================================================= */
+
+.principles-section {
+  padding: 110px 0;
+  background: #ffffff;
+}
+
+.principles-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  margin-bottom: 50px;
+}
+
+.principles-heading h2 {
+  margin-top: 13px;
+
+  font-size: 42px;
+  line-height: 1.12;
+  letter-spacing: -1.8px;
+}
+
+.principles-heading > p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.principles-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 16px;
+}
+
+.principle-card {
+  position: relative;
+
+  min-height: 330px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  transition: 0.25s ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #d6d8e0;
+
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.08);
+}
+
+.principle-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.principle-header > span {
+  color: #94a3b8;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.principle-icon {
+  display: grid;
+  place-items: center;
+
+  width: 43px;
+  height: 43px;
+
+  border-radius: 12px;
+
+  background: rgba(99, 91, 255, 0.1);
+
+  color: #635bff;
+
+  font-size: 18px;
+}
+
+.principle-card h3 {
+  margin-top: 55px;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+}
+
+.principle-card p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.principle-footer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: auto;
+  padding-top: 25px;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   COMPROMISSO
+========================================================= */
+
+.commitment-section {
+  padding: 30px 0 105px;
+}
+
+.commitment-card {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 80px;
+
+  padding: 55px;
+
+  border-radius: 22px;
+
+  background: #f5f7fb;
+
+  border: 1px solid #e5e7eb;
+}
+
+.commitment-heading h2 {
+  margin: 14px 0 18px;
+
+  font-size: 39px;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+
+.commitment-heading p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.commitment-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.commitment-item {
+  display: grid;
+
+  grid-template-columns: 45px 35px 1fr;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #dfe3ea;
+}
+
+.commitment-item:first-child {
+  padding-top: 0;
+}
+
+.commitment-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.commitment-icon {
+  display: grid;
+  place-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #635bff;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 5px 15px rgba(15, 23, 42, 0.05);
+}
+
+.commitment-number {
+  color: #94a3b8;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.commitment-text h3 {
+  margin-bottom: 5px;
+
+  font-size: 16px;
+}
+
+.commitment-text p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.sobre-cta {
+  padding: 30px 0 100px;
+}
+
+.sobre-cta-card {
+  position: relative;
+
+  overflow: hidden;
+
+  padding: 75px 40px;
+
+  border-radius: 24px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0b1020,
+      #1e1b4b
+    );
+
+  color: #ffffff;
+
+  text-align: center;
+
+  box-shadow:
+    0 30px 70px rgba(15, 23, 42, 0.15);
+}
+
+.cta-decoration {
+  position: absolute;
+
+  top: -80px;
+  right: -40px;
+
+  font-size: 260px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  color: rgba(99, 91, 255, 0.08);
+}
+
+.sobre-cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.sobre-cta-content .sobre-label {
+  color: #a5a0ff;
+}
+
+.sobre-cta-content h2 {
+  margin: 15px 0;
+
+  font-size: clamp(35px, 4vw, 48px);
+
+  line-height: 1.08;
+
+  letter-spacing: -2px;
+}
+
+.sobre-cta-content p {
+  max-width: 600px;
+
+  margin: 0 auto 30px;
+
+  color: #cbd5e1;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.sobre-cta-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  border-radius: 10px;
+
+  background: #635bff;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: 0.25s ease;
+}
+
+.sobre-cta-button:hover {
+  background: #5148e5;
+  transform: translateY(-2px);
+}
+
+.sobre-cta-button span {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .sobre-hero-grid {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .sobre-hero-content {
+    text-align: center;
+  }
+
+  .sobre-hero-content > p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sobre-hero-buttons {
+    justify-content: center;
+  }
+
+  .sobre-visual {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .workflow-grid,
+  .principles-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .commitment-card {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .about-grid {
+    gap: 50px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .sobre-container {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .sobre-hero {
+    padding: 75px 0;
+  }
+
+  .sobre-hero-content h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .sobre-hero-content > p {
+    font-size: 16px;
+  }
+
+  .sobre-hero-buttons {
+    flex-direction: column;
+  }
+
+  .sobre-primary-button,
+  .sobre-secondary-button {
+    width: 100%;
+  }
+
+  .sobre-visual {
+    min-height: 390px;
+  }
+
+  .visual-card-main {
+    top: 40px;
+    right: 0;
+
+    width: calc(100% - 30px);
+
+    min-height: 310px;
+
+    padding: 28px;
+  }
+
+  .visual-card-main h3 {
+    font-size: 29px;
+  }
+
+  .visual-floating-top {
+    top: 0;
+    right: 0;
+  }
+
+  .visual-floating-bottom {
+    left: 0;
+    bottom: 10px;
+  }
+
+  .about-section,
+  .workflow-section,
+  .principles-section {
+    padding: 75px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-heading h2,
+  .section-heading-centered h2,
+  .principles-heading h2 {
+    font-size: 34px;
+  }
+
+  .objective-section {
+    padding: 0 0 75px;
+  }
+
+  .objective-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 32px;
+  }
+
+  .objective-content h2 {
+    font-size: 27px;
+  }
+
+  .objective-arrow {
+    position: absolute;
+
+    right: 25px;
+    top: 30px;
+  }
+
+  .workflow-grid,
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principle-card {
+    min-height: 280px;
+  }
+
+  .principles-heading {
+    display: block;
+  }
+
+  .principles-heading > p {
+    margin-top: 20px;
+  }
+
+  .commitment-section {
+    padding-bottom: 75px;
+  }
+
+  .commitment-card {
+    padding: 30px;
+  }
+
+  .commitment-heading h2 {
+    font-size: 32px;
+  }
+
+  .commitment-item {
+    grid-template-columns: 42px 30px 1fr;
+  }
+
+  .sobre-cta {
+    padding-bottom: 75px;
+  }
+
+  .sobre-cta-card {
+    padding: 60px 25px;
+  }
+
+  .sobre-cta-content h2 {
+    font-size: 34px;
+  }
+
+}
+
+
+@media (max-width: 420px) {
+
+  .sobre-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .visual-card-main {
+    width: calc(100% - 10px);
+  }
+
+  .visual-floating {
+    padding: 11px;
+  }
+
+  .visual-floating strong {
+    font-size: 10px;
+  }
+
+  .visual-floating small {
+    font-size: 9px;
+  }
+
+  .about-highlight {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-item {
+    grid-template-columns: 40px 1fr;
+  }
+
+  .commitment-number {
+    display: none;
+  }
+
+}
